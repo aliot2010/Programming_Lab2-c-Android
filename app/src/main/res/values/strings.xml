@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab1cAndroid</string>
+    <string name="action_settings">Settings</string>
+    <string name="formula1">Formula1</string>
+    <string name="Formula2">Formula2</string>
+    <string name="inputX">Input x</string>
+    <string name="inputY">Input y</string>
+    <string name="inputZ">Input z</string>
+</resources>

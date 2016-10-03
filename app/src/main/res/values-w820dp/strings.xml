@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="formula1">Formula1</string>
+    <string name="Formula2">Formula2</string>
+    <string name="inputX">Input x</string>
+    <string name="inputY">Input y</string>
+    <string name="inputZ">Input z</string>
+</resources>
