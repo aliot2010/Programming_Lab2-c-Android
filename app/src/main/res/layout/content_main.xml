@@ -101,7 +101,7 @@
             android:layout_marginRight="25dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/radioButton8"
+            android:id="@+id/radioMem1"
             android:layout_weight="1" />
 
         <RadioButton
@@ -109,108 +109,17 @@
             android:layout_marginRight="25dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/radioButton7"
+            android:id="@+id/radioMem2"
             android:layout_weight="1" />
 
         <RadioButton
             android:text="mem3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/radioButton6"
+            android:id="@+id/radioMem3"
             android:layout_weight="1" />
     </RadioGroup>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_below="@+id/radioGroup"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="31dp">
-
-        <TextView
-            android:textColor="#000000"
-            android:text="0.0"
-            android:layout_marginRight="50dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView3"
-
-             />
-
-        <TextView
-            android:textColor="#000000"
-            android:text="0.0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-             />
-
-        <TextView
-            android:textColor="#000000"
-            android:text="0.0"
-            android:layout_marginLeft="50dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView"
-             />
-    </LinearLayout>
-
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/inputy"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-
-        android:layout_marginBottom="29dp"
-        android:layout_above="@+id/floatingButtonMPlus"
-        android:layout_alignStart="@+id/formulaView">
-        <EditText
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:hint="@string/inputY"
-            android:id="@+id/inputY"
-
-
-            />
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-    android:id="@+id/inputx"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-
-        android:layout_centerVertical="true"
-        android:layout_alignEnd="@+id/radioGroup">
-
-        <EditText
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:hint="@string/inputX"
-            android:id="@+id/inputX"
-
-
-            />
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/inputz"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-
-        android:layout_above="@+id/floatingButtonMC"
-        android:layout_alignStart="@+id/inputy">
-
-        <EditText
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:hint="@string/inputZ"
-            android:id="@+id/inputZ"
-
-
-            />
-    </android.support.design.widget.TextInputLayout>
 
     <TextView
         android:textColor="#000000"
@@ -231,9 +140,115 @@
         android:textColor="#555555"
         android:text="Result:"
         android:textSize="18sp"
-       
+
         android:layout_alignTop="@+id/result_view"
         android:layout_toStartOf="@+id/result_view"
         android:layout_marginEnd="9dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="31dp"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:textColor="#000000"
+            android:text="0.0"
+            android:gravity="center"
+            android:layout_marginRight="50dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textMem1"
+
+             />
+
+        <TextView
+            android:textColor="#000000"
+            android:text="0.0"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textMem2"
+             />
+
+        <TextView
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="0.0"
+            android:layout_marginLeft="50dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textMem3"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentEnd="true">
+    <android.support.design.widget.TextInputLayout
+    android:id="@+id/inputx"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+
+
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="5dp">
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:hint="@string/inputX"
+            android:id="@+id/inputX"
+
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+
+
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="25dp">
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:hint="@string/inputY"
+            android:id="@+id/inputY"
+
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+
+
+        android:layout_marginTop="42dp"
+        android:layout_marginLeft="25dp">
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:hint="@string/inputZ"
+            android:id="@+id/inputZ"
+
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>
