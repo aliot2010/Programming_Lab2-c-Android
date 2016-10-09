@@ -205,6 +205,7 @@
 
         <EditText
             android:layout_width="100dp"
+            android:inputType="numberDecimal"
             android:layout_height="match_parent"
             android:hint="@string/inputX"
             android:id="@+id/inputX"
@@ -225,6 +226,7 @@
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:hint="@string/inputY"
+            android:inputType="numberDecimal"
             android:id="@+id/inputY"
 
 
@@ -244,7 +246,7 @@
             android:layout_height="match_parent"
             android:hint="@string/inputZ"
             android:id="@+id/inputZ"
-
+            android:inputType="numberDecimal"
 
             />
     </android.support.design.widget.TextInputLayout>
